@@ -1,0 +1,113 @@
+body { 
+	margin: 0; 
+	padding: 0; }
+
+#map { 
+	position: absolute; 
+	top: 0; 
+	bottom: 0; 
+	width: 60%; 
+	margin-left: 40%; }
+
+.container {
+  display: grid | inline-grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+.item-map {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.item-search {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+ #features {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        overflow: auto;
+        background: rgba(255, 255, 255, 0.8);
+        }
+        #map canvas {
+        cursor: crosshair;
+        }
+        .mapboxgl-popup {
+            max-width: 400px;
+            font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        }
+        .intro {
+            text-align: center;
+            width: 80%;
+            margin-left: 10%;
+        }
+        .item-search h1{
+            text-align: center;
+        }
+        .item-search {
+            margin-top: 60px;
+            width: 35%;
+            margin-left: 2.5%;
+            font-family: 'Nunito', sans-serif;
+        }
+        .slidecontainer {
+            left: -30px;
+        }
+
+        .container {
+            margin-top: 9%;
+        }
+
+        .slider {
+            -webkit-appearance: none;
+            width:90%;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.5;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+
+        .slider:hover {
+            opacity: 1;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 10px;
+            background: #91b1b1;  
+            cursor: pointer;
+        }
+
+        .slider::-moz-range-thumb {
+            width: 25px;
+            height: 20px;
+            background: #91b1b1;
+            cursor: pointer;
+        }
+
+        .item-search select {
+            width: 40%;
+            height: 30px;
+            margin-bottom: 20px;
+        }
+
+        .item-search button {
+            width: 40%;
+            height: 30px;
+            margin-bottom: 3%;
+            background: #91b1b1;
+            border: none;
+            border-radius: 20px;
+        }
